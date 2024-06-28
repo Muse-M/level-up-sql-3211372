@@ -6,3 +6,7 @@
 -- restaurant.db SQLite database.
 SELECT * FROM Dishes;
 SELECT * FROM Customers;
+
+/*
+
+*/
