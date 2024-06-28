@@ -8,5 +8,18 @@
 update loans 
 set returneddate='2022-07-05'
 where bookid in (select bookid from books 
-                    where barcode in (6435968624,5677520613,5677520613))
+                    where barcode = 6435968624 )
           and retuneddate is null --IMPORTANT!!!!!!!!!!!!!!!!!!
+
+update loans 
+set returneddate='2022-07-05'
+where bookid in (select bookid from books 
+                    where barcode = 5677520613 )
+          and retuneddate is null --IMPORTANT!!!!!!!!!!!!!!!!!!
+
+update loans 
+set returneddate='2022-07-05'
+where bookid in (select bookid from books 
+                    where barcode = 5677520613 )
+          and retuneddate is null --IMPORTANT!!!!!!!!!!!!!!!!!!
+
