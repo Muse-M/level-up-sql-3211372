@@ -5,3 +5,11 @@
 -- Stevensen, Stephensen, Stevenson, Stephenson, Stuyvesant
 
 -- There are four people in the party. Today is June 14th.
+
+SELECT *
+FROM CUSTOMERS
+JOIN RESERVATIONS
+ON CUSTOMERS.CUSTOMERID=RESERVATIONS.CUSTOMERID
+WHERE LASTNAME LIKE 'Ste%'
+      AND PARTYSIZE=4
+      AND DATE(Date)='2022-06-14'
