@@ -5,3 +5,8 @@
 -- they plan to bring in their party.
 
 -- Hint: SQLite offers the INTEGER and REAL datatypes
+--DROP TABLE IF EXISTS 'AnniversaryBookings'
+CREATE TABLE AnniversaryBookings (
+              CustomerID INTEGER,
+              PartySize INTEGER
+)
